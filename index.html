@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══ SEO ═══ -->
+<title>ft + in to mm Converter | Feet Inches to Millimetres</title>
+<meta name="description" content="Free online feet and inches to millimetres converter. Instant bidirectional unit conversion tool for architects, engineers, and CAD users. Includes history, keyboard shortcuts, and PDF export.">
+<meta name="keywords" content="feet to mm, inches to millimetres, ft in to mm, unit converter, architectural converter, CAD unit converter, length converter, imperial to metric">
+<meta name="author" content="Unit Converter Tool">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://yourdomain.com/">
+
+<!-- ═══ Open Graph (social sharing) ═══ -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="ft + in → mm Converter | Feet Inches to Millimetres">
+<meta property="og:description" content="Instant bidirectional converter for architects and CAD users. Convert feet & inches to mm or mm to feet & inches with history and PDF export.">
+<meta property="og:url" content="https://yourdomain.com/">
+<meta property="og:image" content="https://yourdomain.com/og-image.png">
+<meta property="og:locale" content="en_IN">
+
+<!-- ═══ Twitter Card ═══ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ft + in → mm Converter">
+<meta name="twitter:description" content="Free unit converter for architects and engineers. ft/in ↔ mm with history & PDF export.">
+<meta name="twitter:image" content="https://yourdomain.com/og-image.png">
+
+<!-- ═══ Favicon (inline SVG → base64, no file needed) ═══ -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23161618'/%3E%3Crect x='0' y='0' width='32' height='3' fill='%23e8c84a'/%3E%3Ctext x='5' y='21' font-family='monospace' font-size='11' font-weight='bold' fill='%234ae8c8'%3Emm%3C/text%3E%3Ctext x='3' y='30' font-family='monospace' font-size='8' fill='%23e8c84a'%3Eft%2Bin%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23161618'/%3E%3Crect x='0' y='0' width='32' height='3' fill='%23e8c84a'/%3E%3Ctext x='5' y='21' font-family='monospace' font-size='11' font-weight='bold' fill='%234ae8c8'%3Emm%3C/text%3E%3Ctext x='3' y='30' font-family='monospace' font-size='8' fill='%23e8c84a'%3Eft%2Bin%3C/text%3E%3C/svg%3E">
+
+<!-- ═══ Schema.org structured data ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "ft + in to mm Converter",
+  "url": "https://yourdomain.com/",
+  "description": "Free bidirectional unit converter for feet and inches to millimetres. Designed for architects, engineers, and CAD users.",
+  "applicationCategory": "UtilitiesApplication",
+  "operatingSystem": "Any",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+}
+</script>
+
+<!-- ═══ Google AdSense — replace ca-pub-XXXXXXXXXXXXXXXX with your Publisher ID ═══ -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&family=Outfit:wght@300;600;700&display=swap');
+
+  :root {
+    --bg: #0e0e0f;
+    --panel: #161618;
+    --border: #2a2a2e;
+    --accent: #e8c84a;
+    --accent2: #4ae8c8;
+    --text: #d0cfc8;
+    --muted: #5a595c;
+    --red: #e84a4a;
+    --grid: #1a1a1c;
+    --history-bg: #111113;
+    --history-item: #1c1c1f;
+    --history-hover: #222228;
+    --input-bg: #0e0e0f;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Outfit', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    background-image:
+      repeating-linear-gradient(0deg, transparent, transparent 39px, var(--grid) 39px, var(--grid) 40px),
+      repeating-linear-gradient(90deg, transparent, transparent 39px, var(--grid) 39px, var(--grid) 40px);
+    transition: background 0.25s;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 280px;
+    min-height: 100vh;
+    background: var(--panel);
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-top: 3px solid var(--accent);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: background 0.25s, border-color 0.25s;
+  }
+
+  .card::before {
+    content: '';
+    position: absolute;
+    top: -3px; right: -1px;
+    width: 10px; height: 10px;
+    background: var(--accent);
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
+    transition: background 0.25s;
+  }
+
+  /* HEADER */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header-title {
+    font-size: 9px;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+
+  .print-btn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    font-family: 'Outfit', sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+  }
+  .print-btn:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* MODE TABS */
+  .mode-bar { display: flex; border-bottom: 1px solid var(--border); }
+
+  .mode-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 9px 6px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 9.5px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    cursor: pointer;
+    border-right: 1px solid var(--border);
+    transition: color 0.15s, background 0.15s;
+    position: relative;
+  }
+
+  .mode-btn:last-child { border-right: none; }
+
+  .mode-btn .kb {
+    display: inline-block;
+    background: var(--border);
+    color: var(--muted);
+    font-size: 7px;
+    padding: 1px 3px;
+    border-radius: 2px;
+    margin-left: 3px;
+    font-weight: 700;
+    vertical-align: middle;
+  }
+
+  .mode-btn.active { color: var(--accent); background: rgba(184,134,11,0.06); }
+  .mode-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px; left: 0; right: 0;
+    height: 2px;
+    background: var(--accent);
+  }
+
+  .panel { display: none; flex-direction: column; }
+  .panel.active { display: flex; }
+
+  /* INPUTS */
+  .inputs {
+    padding: 14px 10px 10px;
+    display: flex;
+    gap: 8px;
+    align-items: flex-end;
+  }
+
+  .field { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+
+  label {
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  input[type="number"] {
+    width: 100%;
+    background: var(--input-bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-family: 'Nunito', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    padding: 7px 8px;
+    outline: none;
+    -moz-appearance: textfield;
+    transition: border-color 0.15s, background 0.25s, box-shadow 0.15s;
+    caret-color: var(--accent);
+  }
+
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+  input[type="number"]:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 2px rgba(184,134,11,0.12);
+  }
+
+  .unit-badge {
+    font-size: 9px;
+    color: var(--muted);
+    text-align: right;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 2px;
+  }
+
+  .plus { font-size: 16px; color: var(--border); padding-bottom: 16px; font-weight: 300; }
+
+  /* OUTPUT */
+  .output-section {
+    border-top: 1px solid var(--border);
+    padding: 12px 10px 10px;
+    background: var(--bg);
+    transition: background 0.25s;
+  }
+
+  .output-label {
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 5px;
+    font-weight: 600;
+  }
+
+  .output-main {
+    font-family: 'Nunito', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--accent2);
+    letter-spacing: -0.01em;
+    line-height: 1;
+    transition: color 0.2s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .output-main.zero { color: var(--muted); }
+  .output-unit { font-size: 10px; color: var(--muted); font-family: 'Nunito', sans-serif; margin-top: 4px; letter-spacing: 0.08em; }
+
+  .ftout-row { display: flex; gap: 10px; align-items: baseline; }
+  .ftout-group { display: flex; align-items: baseline; gap: 3px; }
+
+  .ftout-val {
+    font-family: 'Nunito', sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    color: var(--accent2);
+    line-height: 1;
+    transition: color 0.2s;
+  }
+
+  .ftout-val.zero { color: var(--muted); }
+  .ftout-sym { font-family: 'Nunito', sans-serif; font-size: 18px; color: var(--muted); padding-bottom: 2px; }
+
+  /* SECONDARY */
+  .secondary-row { display: flex; border-top: 1px solid var(--border); }
+  .secondary { flex: 1; padding: 8px 10px; border-right: 1px solid var(--border); }
+  .secondary:last-child { border-right: none; }
+
+  .secondary-label {
+    font-size: 8px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 2px;
+    font-weight: 600;
+  }
+
+  .secondary-value { font-family: 'Nunito', sans-serif; font-size: 14px; color: var(--text); transition: color 0.2s; }
+  .secondary-value.zero { color: var(--muted); }
+
+  /* TICK */
+  .tick-marks { display: flex; padding: 0 10px; height: 8px; border-top: 1px solid var(--border); align-items: flex-end; overflow: hidden; }
+  .tick { flex: 1; border-right: 1px solid var(--border); height: 5px; }
+  .tick:nth-child(5n) { height: 8px; border-right-color: var(--muted); }
+
+  /* HISTORY */
+  .history-section {
+    height: 210px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--border);
+    background: var(--history-bg);
+    overflow: hidden;
+    transition: background 0.25s, height 0.22s ease;
+  }
+  .history-section.collapsed { height: 28px; }
+  .history-section.collapsed .history-list { display: none; }
+
+  .history-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6px 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .history-label {
+    font-size: 8px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+
+  .history-clear-btn {
+    background: none; border: none;
+    font-size: 8px; color: var(--muted);
+    cursor: pointer; font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;
+    padding: 2px 4px; transition: color 0.15s;
+  }
+
+  .history-clear-btn:hover { color: var(--red); }
+
+  .history-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 6px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .history-list::-webkit-scrollbar { width: 3px; }
+  .history-list::-webkit-scrollbar-track { background: transparent; }
+  .history-list::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+  .history-empty {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 9px;
+    color: var(--border);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .history-empty-hint {
+    font-size: 8px;
+    color: var(--border);
+    letter-spacing: 0.08em;
+    text-transform: none;
+    opacity: 0.7;
+  }
+
+  .history-item {
+    background: var(--history-item);
+    border: 1px solid var(--border);
+    padding: 6px 8px;
+    cursor: pointer;
+    transition: background 0.12s, border-color 0.12s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  .history-item:hover { background: var(--history-hover); border-color: var(--accent); }
+  .history-item:hover .history-actions { opacity: 1; }
+
+  .history-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    flex-shrink: 0;
+  }
+
+  .hist-action-btn {
+    background: none;
+    border: 1px solid var(--border);
+    font-family: 'Outfit', sans-serif;
+    font-size: 7.5px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 2px 5px;
+    cursor: pointer;
+    transition: color 0.12s, border-color 0.12s, background 0.12s;
+    white-space: nowrap;
+    line-height: 1.5;
+    color: var(--muted);
+  }
+
+  .hist-action-btn.del { color: var(--red); border-color: transparent; }
+  .hist-action-btn.del:hover { border-color: var(--red); background: rgba(232,74,74,0.1); }
+  .hist-action-btn.cpy { color: var(--accent2); border-color: transparent; }
+  .hist-action-btn.cpy:hover { border-color: var(--accent2); background: rgba(74,232,200,0.08); }
+
+  .history-left { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+
+  .history-input {
+    font-size: 9px;
+    color: var(--muted);
+    font-family: 'Nunito', sans-serif;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+
+  .history-result {
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent2);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+
+  .history-mode-tag {
+    font-size: 7px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+    opacity: 0.6;
+    flex-shrink: 0;
+  }
+
+
+
+  /* CLEAR BTN */
+  .clear-btn {
+    display: block; width: 100%;
+    background: none; border: none;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-family: 'Outfit', sans-serif;
+    font-size: 9px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 8px;
+    cursor: pointer;
+    transition: color 0.15s, background 0.15s;
+    font-weight: 600;
+  }
+
+  .clear-btn:hover { color: var(--red); background: rgba(184,50,50,0.05); }
+
+  /* SHORTCUTS */
+  .shortcut-bar {
+    border-top: 1px solid var(--border);
+    padding: 8px 10px 10px;
+    background: var(--panel);
+    transition: background 0.25s;
+  }
+
+  .shortcut-bar-label {
+    font-size: 8px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 6px;
+    font-weight: 600;
+  }
+
+  .shortcut-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5px 8px; }
+  .kbd { display: flex; align-items: center; gap: 5px; }
+
+  .kbd-key {
+    background: var(--input-bg);
+    border: 1px solid var(--border);
+    border-bottom: 2px solid var(--border);
+    border-radius: 3px;
+    padding: 1px 6px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    color: var(--accent);
+    font-weight: 700;
+    line-height: 1.7;
+    min-width: 20px;
+    text-align: center;
+    transition: background 0.25s, border-color 0.25s;
+  }
+
+  .kbd-desc { color: var(--muted); font-size: 9px; letter-spacing: 0.05em; }
+
+  /* TOAST */
+  #toast {
+    position: fixed;
+    bottom: 14px; left: 50%;
+    transform: translateX(-50%) translateY(16px);
+    background: var(--accent);
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 2px;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 999;
+  }
+
+  [data-theme="dark"] #toast { color: #111; }
+  #toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+</style>
+</head>
+<body>
+<!-- ═══ Ad: Top Banner (728x90 leaderboard or responsive) ═══ -->
+<div style="width:100%;max-width:280px;margin-bottom:8px;text-align:center;">
+  <ins class="adsbygoogle"
+       style="display:block;min-height:50px;"
+       data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+       data-ad-slot="1111111111"
+       data-ad-format="auto"
+       data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+
+<div class="card">
+
+  <!-- HEADER -->
+  <div class="header">
+    <span class="header-title">Unit Converter</span>
+    <button class="print-btn" onclick="printHistory()" title="Print history (PDF)">
+      <svg width="13" height="13" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="3" y="1" width="10" height="7" rx="1" stroke="currentColor" stroke-width="1.4"/>
+        <rect x="3" y="8" width="10" height="6" rx="1" stroke="currentColor" stroke-width="1.4"/>
+        <rect x="5" y="10" width="6" height="1.2" rx="0.6" fill="currentColor"/>
+        <rect x="5" y="12" width="4" height="1.2" rx="0.6" fill="currentColor"/>
+        <path d="M11 4.5H13" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+      </svg>
+      Print
+    </button>
+  </div>
+
+  <!-- MODE TABS -->
+  <div class="mode-bar">
+    <button class="mode-btn active" id="btn-a" onclick="setMode('a')">ft+in→mm <span class="kb">A</span></button>
+    <button class="mode-btn" id="btn-b" onclick="setMode('b')">mm→ft+in <span class="kb">S</span></button>
+  </div>
+
+  <!-- PANEL A: ft+in → mm -->
+  <div class="panel active" id="panel-a">
+    <div class="inputs">
+      <div class="field">
+        <label for="a-ft">Feet</label>
+        <input type="number" id="a-ft" min="0" placeholder="0" autocomplete="off" oninput="calcA()">
+        <div class="unit-badge">′ ft</div>
+      </div>
+      <span class="plus">+</span>
+      <div class="field">
+        <label for="a-in">Inches</label>
+        <input type="number" id="a-in" min="0" step="0.125" placeholder="0" autocomplete="off" oninput="calcA()">
+        <div class="unit-badge">″ in</div>
+      </div>
+    </div>
+    <div class="tick-marks" id="ticks-a"></div>
+    <div class="output-section">
+      <div class="output-label">Result</div>
+      <div class="output-main zero" id="a-mm">0</div>
+      <div class="output-unit">millimetres (mm)</div>
+    </div>
+    <div class="secondary-row">
+      <div class="secondary"><div class="secondary-label">cm</div><div class="secondary-value zero" id="a-cm">0.00</div></div>
+      <div class="secondary"><div class="secondary-label">m</div><div class="secondary-value zero" id="a-m">0.000</div></div>
+      <div class="secondary"><div class="secondary-label">total in</div><div class="secondary-value zero" id="a-totalin">0.000</div></div>
+    </div>
+    <button class="clear-btn" onclick="doClear()">✕  Clear</button>
+  </div>
+
+  <!-- PANEL B: mm → ft+in -->
+  <div class="panel" id="panel-b">
+    <div class="inputs">
+      <div class="field">
+        <label for="b-mm">Millimetres</label>
+        <input type="number" id="b-mm" min="0" step="0.1" placeholder="0" autocomplete="off" oninput="calcB()">
+        <div class="unit-badge">mm</div>
+      </div>
+    </div>
+    <div class="tick-marks" id="ticks-b"></div>
+    <div class="output-section">
+      <div class="output-label">Result</div>
+      <div class="ftout-row">
+        <div class="ftout-group"><div class="ftout-val zero" id="b-ft">0</div><div class="ftout-sym">′</div></div>
+        <div class="ftout-group"><div class="ftout-val zero" id="b-in">0.000</div><div class="ftout-sym">″</div></div>
+      </div>
+      <div class="output-unit">feet + inches</div>
+    </div>
+    <div class="secondary-row">
+      <div class="secondary"><div class="secondary-label">total in</div><div class="secondary-value zero" id="b-totalin">0.000</div></div>
+      <div class="secondary"><div class="secondary-label">cm</div><div class="secondary-value zero" id="b-cm">0.00</div></div>
+      <div class="secondary"><div class="secondary-label">m</div><div class="secondary-value zero" id="b-m">0.000</div></div>
+    </div>
+    <button class="clear-btn" onclick="doClear()">✕  Clear</button>
+  </div>
+
+  <!-- HISTORY -->
+  <div class="history-section">
+    <div class="history-header" onclick="toggleHistory()" style="cursor:pointer">
+      <span class="history-label">History <span id="hist-arrow">▾</span></span>
+      <button class="history-clear-btn" onclick="event.stopPropagation();clearHistory()">Clear all</button>
+    </div>
+    <div class="history-list" id="history-list">
+      <div class="history-empty" id="history-empty">
+        <span>No conversions yet</span>
+        <span class="history-empty-hint">Press Enter to save a result</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SHORTCUTS -->
+  <div class="shortcut-bar">
+    <div class="shortcut-bar-label">Keyboard Shortcuts</div>
+    <div class="shortcut-grid">
+      <span class="kbd"><span class="kbd-key">A</span><span class="kbd-desc">ft+in → mm</span></span>
+      <span class="kbd"><span class="kbd-key">S</span><span class="kbd-desc">mm → ft+in</span></span>
+      <span class="kbd"><span class="kbd-key">D</span><span class="kbd-desc">next field</span></span>
+      <span class="kbd"><span class="kbd-key">C</span><span class="kbd-desc">copy result</span></span>
+      <span class="kbd"><span class="kbd-key">X</span><span class="kbd-desc">clear</span></span>
+      <span class="kbd"><span class="kbd-key">↵</span><span class="kbd-desc">save to history</span></span>
+      <span class="kbd"><span class="kbd-key">Z</span><span class="kbd-desc">clear history</span></span>
+      <span class="kbd"><span class="kbd-key">Q</span><span class="kbd-desc">toggle history</span></span>
+      <span class="kbd"><span class="kbd-key">P</span><span class="kbd-desc">print history</span></span>
+    </div>
+  </div>
+
+  <!-- ═══ Ad: In-card Rectangle (300x250 or responsive) ═══ -->
+  <div style="padding:8px 10px;border-top:1px solid var(--border);background:var(--panel);">
+    <ins class="adsbygoogle"
+         style="display:block;min-height:100px;"
+         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+         data-ad-slot="2222222222"
+         data-ad-format="rectangle"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+<div id="toast"></div>
+
+<script>
+  // Build ticks
+  ['ticks-a','ticks-b'].forEach(id => {
+    const el = document.getElementById(id);
+    for (let i = 0; i < 40; i++) {
+      const t = document.createElement('div');
+      t.className = 'tick';
+      el.appendChild(t);
+    }
+  });
+
+  let currentMode = 'a';
+  let history = [];
+
+  // ── Field references ──
+  const fields = {
+    a: ['a-ft', 'a-in'],
+    b: ['b-mm']
+  };
+
+  function setMode(m) {
+    currentMode = m;
+    document.getElementById('panel-a').classList.toggle('active', m === 'a');
+    document.getElementById('panel-b').classList.toggle('active', m === 'b');
+    document.getElementById('btn-a').classList.toggle('active', m === 'a');
+    document.getElementById('btn-b').classList.toggle('active', m === 'b');
+    setTimeout(() => focusFirst(), 60);
+  }
+
+  function focusFirst() {
+    const id = currentMode === 'a' ? 'a-ft' : 'b-mm';
+    document.getElementById(id).focus();
+    document.getElementById(id).select();
+  }
+
+  function focusNext() {
+    // Cycle through fields of current mode
+    const list = fields[currentMode];
+    const active = document.activeElement;
+    const idx = list.indexOf(active.id);
+    if (idx === -1 || idx === list.length - 1) {
+      // go to first
+      document.getElementById(list[0]).focus();
+      document.getElementById(list[0]).select();
+    } else {
+      document.getElementById(list[idx + 1]).focus();
+      document.getElementById(list[idx + 1]).select();
+    }
+  }
+
+  function calcA() {
+    const ft = parseFloat(document.getElementById('a-ft').value) || 0;
+    const inches = parseFloat(document.getElementById('a-in').value) || 0;
+    const totalIn = ft * 12 + inches;
+    const mm = totalIn * 25.4;
+    const zero = mm === 0;
+    const mmStr = Number.isInteger(mm) ? mm.toString() : mm.toFixed(2);
+    set('a-mm', mmStr, zero, 'output-main');
+    set('a-cm', (mm/10).toFixed(2), zero, 'secondary-value');
+    set('a-m', (mm/1000).toFixed(3), zero, 'secondary-value');
+    set('a-totalin', totalIn.toFixed(3), zero, 'secondary-value');
+  }
+
+  function calcB() {
+    const mm = parseFloat(document.getElementById('b-mm').value) || 0;
+    const totalIn = mm / 25.4;
+    const ft = Math.floor(totalIn / 12);
+    const inches = totalIn - ft * 12;
+    const zero = mm === 0;
+    set('b-ft', ft.toString(), zero, 'ftout-val');
+    set('b-in', inches.toFixed(3), zero, 'ftout-val');
+    set('b-totalin', totalIn.toFixed(3), zero, 'secondary-value');
+    set('b-cm', (mm/10).toFixed(2), zero, 'secondary-value');
+    set('b-m', (mm/1000).toFixed(3), zero, 'secondary-value');
+  }
+
+  function saveToHistory() {
+    let inputLabel, resultLabel, mm;
+    if (currentMode === 'a') {
+      const ft = parseFloat(document.getElementById('a-ft').value) || 0;
+      const inches = parseFloat(document.getElementById('a-in').value) || 0;
+      mm = (ft * 12 + inches) * 25.4;
+      if (mm === 0) return;
+      const mmStr = Number.isInteger(mm) ? mm.toString() : mm.toFixed(2);
+      inputLabel = `${ft}′ ${inches}″`;
+      resultLabel = mmStr + ' mm';
+    } else {
+      mm = parseFloat(document.getElementById('b-mm').value) || 0;
+      if (mm === 0) return;
+      const totalIn = mm / 25.4;
+      const ft = Math.floor(totalIn / 12);
+      const inches = totalIn - ft * 12;
+      inputLabel = mm + ' mm';
+      resultLabel = `${ft}′ ${inches.toFixed(3)}″`;
+    }
+    // Avoid exact duplicate at top
+    if (history.length > 0 && history[0].result === resultLabel) {
+      showToast('Already saved');
+      return;
+    }
+    history.unshift({ mode: currentMode, input: inputLabel, result: resultLabel });
+    if (history.length > 40) history.pop();
+    renderHistory();
+    showToast('Saved to history');
+  }
+
+  function renderHistory() {
+    const list = document.getElementById('history-list');
+    if (history.length === 0) {
+      list.innerHTML = '';
+      list.insertAdjacentHTML('beforeend', `
+        <div class="history-empty" id="history-empty">
+          <span>No conversions yet</span>
+          <span class="history-empty-hint">Press Enter to save a result</span>
+        </div>`);
+      return;
+    }
+    list.innerHTML = '';
+    history.forEach((h, idx) => {
+      const item = document.createElement('div');
+      item.className = 'history-item';
+      item.innerHTML = `
+        <div class="history-left">
+          <div class="history-input">${h.input}</div>
+          <div class="history-result">${h.result}</div>
+        </div>
+        <span class="history-mode-tag">${h.mode === 'a' ? 'mm' : 'ft'}</span>
+        <div class="history-actions">
+          <button class="hist-action-btn del" title="Remove this entry">✕ del</button>
+          <button class="hist-action-btn cpy" title="Copy result">⎘ copy</button>
+        </div>
+      `;
+      // Delete button
+      item.querySelector('.del').addEventListener('click', (e) => {
+        e.stopPropagation();
+        history.splice(idx, 1);
+        renderHistory();
+        showToast('Entry removed');
+      });
+      // Copy button
+      item.querySelector('.cpy').addEventListener('click', (e) => {
+        e.stopPropagation();
+        navigator.clipboard.writeText(h.result).then(() => showToast('Copied: ' + h.result));
+      });
+      list.appendChild(item);
+    });
+  }
+
+  function clearHistory() {
+    history = [];
+    renderHistory();
+    showToast('History cleared');
+  }
+
+  function doClear() {
+    if (currentMode === 'a') {
+      document.getElementById('a-ft').value = '';
+      document.getElementById('a-in').value = '';
+      calcA();
+    } else {
+      document.getElementById('b-mm').value = '';
+      calcB();
+    }
+    focusFirst();
+    showToast('Cleared');
+  }
+
+  function set(id, val, zero, base) {
+    const el = document.getElementById(id);
+    el.textContent = val;
+    el.className = base + (zero ? ' zero' : '');
+  }
+
+  function getResultText() {
+    if (currentMode === 'a') return document.getElementById('a-mm').textContent + ' mm';
+    return document.getElementById('b-ft').textContent + "' " + document.getElementById('b-in').textContent + '"';
+  }
+
+  function copyResult() {
+    const val = getResultText();
+    if (val.startsWith('0 ') || val === "0' 0.000\"") { showToast('Nothing to copy'); return; }
+    navigator.clipboard.writeText(val).then(() => showToast('Copied: ' + val)).catch(() => showToast('Copy failed'));
+  }
+
+  function showToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(t._timer);
+    t._timer = setTimeout(() => t.classList.remove('show'), 1800);
+  }
+
+  // ── printHistory ──
+  function printHistory() {
+    if (history.length === 0) { showToast('No history to print'); return; }
+    const now = new Date().toLocaleString();
+    const ordered = [...history].reverse();
+    const rows = ordered.map((h, i) => `
+      <tr class="${i % 2 === 0 ? 'even' : 'odd'}">
+        <td class="num">${i + 1}</td>
+        <td>${h.input}</td>
+        <td class="result">${h.result}</td>
+        <td class="tag">${h.mode === 'a' ? 'ft→mm' : 'mm→ft'}</td>
+      </tr>`).join('');
+
+    const win = window.open('', '_blank');
+    win.document.write(`<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Conversion History</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Outfit:wght@400;700&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Outfit', sans-serif; background: #fff; color: #111; padding: 36px 40px; }
+  .header { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 3px solid #e8c84a; padding-bottom: 12px; margin-bottom: 24px; }
+  .title { font-size: 22px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; }
+  .subtitle { font-size: 10px; color: #999; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 4px; }
+  .meta { font-size: 10px; color: #aaa; text-align: right; letter-spacing: 0.05em; }
+  table { width: 100%; border-collapse: collapse; }
+  thead tr { background: #1a1a1a; color: #e8c84a; }
+  thead th { font-family: 'Outfit', sans-serif; font-size: 9px; letter-spacing: 0.2em; text-transform: uppercase; padding: 8px 12px; text-align: left; font-weight: 700; }
+  tbody tr.even { background: #f9f9f9; }
+  tbody tr.odd { background: #ffffff; }
+  td { font-family: 'Nunito', sans-serif; padding: 8px 12px; font-size: 13px; border-bottom: 1px solid #eee; }
+  td.num { color: #bbb; font-size: 10px; width: 32px; }
+  td.result { font-weight: 700; color: #007a6e; }
+  td.tag { font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: #b8860b; font-weight: 700; }
+  .footer { margin-top: 20px; font-size: 9px; color: #ccc; text-align: right; letter-spacing: 0.1em; text-transform: uppercase; }
+  @media print { body { padding: 20px; } }
+</style>
+</head>
+<body>
+<div class="header">
+  <div>
+    <div class="title">Conversion History</div>
+    <div class="subtitle">ft/in ↔ mm Unit Converter</div>
+  </div>
+  <div class="meta">${now}<br>${history.length} conversions</div>
+</div>
+<table>
+  <thead><tr><th>#</th><th>Input</th><th>Result</th><th>Mode</th></tr></thead>
+  <tbody>${rows}</tbody>
+</table>
+<div class="footer">Generated by ft/in ↔ mm Converter</div>
+</body>
+</html>`);
+    win.document.close();
+    setTimeout(() => { win.print(); }, 400);
+  }
+
+  // ── toggleHistory ──
+  function toggleHistory() {
+    const sec = document.querySelector('.history-section');
+    const arrow = document.getElementById('hist-arrow');
+    sec.classList.toggle('collapsed');
+    arrow.textContent = sec.classList.contains('collapsed') ? '▸' : '▾';
+  }
+
+  // ── Keyboard shortcuts ──
+  document.addEventListener('keydown', e => {
+    const inInput = document.activeElement.tagName === 'INPUT';
+    const key = e.key.toLowerCase();
+    const noMod = !e.ctrlKey && !e.metaKey && !e.altKey;
+
+    // A and S ALWAYS switch mode — even inside an input
+    if (key === 'a' && noMod) { e.preventDefault(); setMode('a'); showToast('ft + in → mm'); return; }
+    if (key === 's' && noMod) { e.preventDefault(); setMode('b'); showToast('mm → ft + in'); return; }
+
+    // Enter — jump ft→in or save to history
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      if (currentMode === 'a' && document.activeElement.id === 'a-ft') {
+        document.getElementById('a-in').focus();
+        document.getElementById('a-in').select();
+      } else {
+        saveToHistory();
+      }
+      return;
+    }
+
+    // D — cycle fields (always works)
+    if (key === 'd' && noMod) {
+      e.preventDefault();
+      focusNext();
+      return;
+    }
+
+    // X — clear (always works, even in input)
+    if (key === 'x' && noMod) {
+      e.preventDefault();
+      doClear();
+      return;
+    }
+
+    // Esc — clear
+    if (e.key === 'Escape') {
+      doClear();
+      return;
+    }
+
+    // Q — toggle history (always works)
+    if (key === 'q' && noMod) {
+      e.preventDefault();
+      toggleHistory();
+      return;
+    }
+
+    // Z — clear history (always works)
+    if (key === 'z' && noMod) {
+      e.preventDefault();
+      clearHistory();
+      return;
+    }
+
+    // C — copy result (always works)
+    if (key === 'c' && noMod) {
+      e.preventDefault();
+      copyResult();
+      return;
+    }
+
+    // P — print history (always works)
+    if (key === 'p' && noMod) {
+      e.preventDefault();
+      printHistory();
+      return;
+    }
+  });
+
+  // Init
+  renderHistory();
+  setTimeout(focusFirst, 100);
+</script>
+</body>
+</html>
